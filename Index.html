@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONNECT MORENO!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="texto_principal" > <b>CULTO DE JOVENS - CONNECT MORENO!</b></h1>
+        <nav class="menu-horizontal">
+            <ul>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="https://wa.me/+558194921690" target="_blank">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="dicas" class="container">
+        <h2 class="texto_secundario" >Quer acessar o lugar secreto? Siga estas dicas:</h2>
+        <div class="dicas-lista">
+            <div class="dica" onclick="toggleDica(this)">
+                <h2 class="number">Dica 1</h2>
+                <p class="dica-texto">"Mas quando você orar, vá para seu quarto, feche a porta e ore a seu Pai, que está no secreto. Então seu Pai, que vê no secreto, o recompensará." (Mateus 6:6)</p>
+            </div>
+            <div class="dica" onclick="toggleDica(this)">
+                <h2 class="number">Dica 2</h2>
+                <p class="dica-texto">Após encontrar um lugar que você considere calmo e tranquilo, abra o seu coração e convide a Deus para participar deste momento. Chame Ele para o lugar que você está.</p>
+            </div>
+            <div class="dica" onclick="toggleDica(this)">
+                <h2 class="number" >Dica 3</h2>
+                <p class="dica-texto">Fale tudo que o seu coração deseja para o Senhor, não tenha medo ou vergonha de conversar com Deus, pois Ele é nosso pai e amigo fiel. Não precisamos ter medo de nos expôr ao Senhor.</p>
+            </div>
+            <div class="dica" onclick="toggleDica(this)">
+                <h2 class="number" >Dica 4</h2>
+                <p class="dica-texto">"Como eu irei falar com Deus?" Através da oração, que é uma ferramenta de comunicação direta entre você e o Pai que está no céu. Ele te ouve e pode ter certeza que Ele quer ver as palavras saindo de sua boca.</p>
+            </div>
+        </div>
+        <p class="final-mensagem">Bom... Se você seguiu essas dicas, você acessou o lugar secreto.</p>
+        <b><p class="final-mensagem">Seja bem-vindo!!!</p></b>
+    </section>
+    
+    <section class="musica-recomendada">
+        <h2 class="texto_secundario">Recomendação de Louvor</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HJx_1RkSfnE?si=eegBHru2xNk5Zaup" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <footer class="footer_final">
+        <p>&copy; Connect | Moreno | 2025 | Ano de Frutificar | ADVEC MORENO </p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dicas = document.querySelectorAll(".dica");
+            dicas.forEach((dica, index) => {
+                setTimeout(() => {
+                    dica.classList.add("visible");
+                }, index * 300); // Cada dica aparece com um pequeno delay
+            });
+        });
+    </script>
+</body>
+</html>
